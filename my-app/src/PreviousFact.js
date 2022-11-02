@@ -1,16 +1,16 @@
-import { useState } from 'react';
-
 function PreviousFact(props) {
-    const { fact } = props;
-    const [isFavorited, setIsFavorited] = useState(false);
+    const { fact, ind, favorited, setFavorited } = props;
 
     function toggleFavorited() {
-        setIsFavorited(!isFavorited);
+        let fav = [...favorited];
+        console.log(fav);
+        fav[ind] = !fav[ind];
+        setFavorited(fav);
     }
 
     return(
         <div>
-            <p className="previousFact" style={{backgroundColor: isFavorited ? 'salmon' : ''}} onClick={toggleFavorited}>
+            <p className="previousFact" style={{backgroundColor: favorited[ind] ? 'salmon' : ''}} onClick={toggleFavorited}>
                 {fact}
             </p>
         </div>
