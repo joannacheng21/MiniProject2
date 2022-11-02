@@ -21,7 +21,6 @@ function LRButton(props) {
         if (prevFactInd + 10 >= prevFactsLength) {
             grayedOut = true;
         }
-
         return(
             <div>
                 <button className="lrbutton" onClick={() => {
