@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import PreviousFact from './PreviousFact';
 
 function App() {
   const [currFact, setCurrFact] = useState("");
@@ -29,9 +30,9 @@ function App() {
   return (
     <div className="App">
       <header id="title">Cat Facts</header>
-      <p id="currFact">{currFact}</p>
+      <p id="currentFact">{currFact}</p>
       <button id="generateButton" onClick={fetchFact}>Generate Fact</button>
-      <p>{prevFacts.map(f => (<p>{f}</p>))}</p>
+      <p className="previousFactList">{prevFacts.map(f => (<PreviousFact fact={f}/>))}</p>
     </div>
   );
 }
