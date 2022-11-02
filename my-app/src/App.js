@@ -12,12 +12,16 @@ function App() {
 
   return (
     <div className="App">
-      <header id="title">Cat Facts</header>
+      <div id="title">
+        <header id="titletext">Cat Facts</header>
+      </div>
       <p id="currentFact">{currFact}</p>
       <GenerateFactButton currFact={currFact} setCurrFact={setCurrFact} prevFacts={prevFacts} setPrevFacts={setPrevFacts} favorited={favorited} setFavorited={setFavorited}/>
       <PreviousFactList prevFacts={prevFacts} prevFactInd={prevFactInd} favorited={favorited} setFavorited={setFavorited}/>
-      <LRButton isLeft={true} prevFactInd={prevFactInd} setPrevFactInd={setPrevFactInd} prevFactsLength={prevFacts.length}/>
-      <LRButton isLeft={false} prevFactInd={prevFactInd} setPrevFactInd={setPrevFactInd} prevFactsLength={prevFacts.length}/>
+      <div id="arrowbuttons">
+        <LRButton isLeft={true} prevFactInd={prevFactInd} setPrevFactInd={setPrevFactInd} prevFactsLength={prevFacts.length}/>
+        <LRButton isLeft={false} prevFactInd={prevFactInd} setPrevFactInd={setPrevFactInd} prevFactsLength={prevFacts.length}/>
+      </div>
       <p id="pagenum">Page {prevFactInd/10 + 1} of {Math.round(prevFacts.length/10 + 0.49)}</p>
     </div>
   );

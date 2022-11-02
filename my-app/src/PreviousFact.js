@@ -10,7 +10,7 @@ function PreviousFact(props) {
 
     return(
         <div>
-            <p className="previousFact" style={{backgroundColor: favorited[ind] ? 'salmon' : ''}} onClick={toggleFavorited}>
+            <p className="previousFact" style={{backgroundColor: favorited[ind] ? 'rgb(255,233,243)' : ''}} onClick={toggleFavorited}>
                 {fact}
             </p>
         </div>

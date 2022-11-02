@@ -5,7 +5,7 @@ function PreviousFactList(props) {
 
     return(
         <div>
-            <p className="previousFactList">
+            <p id="previousFactList">
                 {prevFacts.slice(prevFactInd, prevFactInd + 10).map(
                 (f, ind) => (<PreviousFact fact={f} ind={prevFactInd + ind} favorited={favorited} setFavorited={setFavorited}/>))}
             </p>

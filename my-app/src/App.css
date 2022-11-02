@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+#title {
+  background-image: url("./bg.png");
+  padding: 1em 0em 1em 0em;
+  border-style: solid;
+  border-color: rgba(255,216,235);
+  border-width: 1em;
+}
+
+#titletext{
+  font-size: 5em;
+  background-color: rgba(252,248,249, 0.8);
+  margin: 0.5em 6em;
+  padding: 0.5em 0em;
+  color: rgba(156, 158, 240);
+  font-family: Mali;
+  font-weight: 700;
+  border-radius: 0.5em;
+}
+
+#currentFact {
+  font-size: 2em;
+  margin: 2em 5em 1em 5em;
+  font-family: Comfortaa;
+}
+
+#generateButton {
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  font-weight: 700;
+  background-color: rgba(207,215,253,0.8);
+  border-style: solid;
+  border-color: rgb(166, 180, 246);
+  border-width: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+#previousFactList {
+  font-family: Comfortaa;
+  margin: 3em 10em 2em 10em;
+  color: rgb(80, 80, 80);
+}
+
+.previousFact {
+  padding: 0.5em;
+  margin: 0em;
+}
+
+#arrowbuttons {
+  display: flex;
+  justify-content: center;
+}
+
+.lrbutton {
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  font-weight: 700;
+  background-color: rgba(207,215,253,0.8);
+  border-style: solid;
+  border-color: rgb(166, 180, 246);
+  border-width: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.5em 0.8em;
+  margin: 0em 1em;
+}
+
+#pagenum {
+  font-family: Comfortaa;
+  margin: 1.5em 0em;
+}
